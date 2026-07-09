@@ -1,0 +1,20 @@
+# Gradle / Android build output
+.gradle/
+.gradle-home/
+.kotlin/
+build/
+app/build/
+
+# Local machine and IDE files
+local.properties
+*.iml
+.idea/
+.DS_Store
+
+# Generated APKs and archives
+*.apk
+*.aab
+*.ap_
+
+# Logs
+*.log

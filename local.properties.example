@@ -1,0 +1,3 @@
+DATA_SOURCE_MODE=local
+SUPABASE_URL=replace_with_your_supabase_project_url
+SUPABASE_ANON_KEY=replace_with_your_anon_public_key
