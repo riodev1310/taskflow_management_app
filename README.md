@@ -117,10 +117,3 @@ The debug APK will be generated at:
 ```text
 app/build/outputs/apk/debug/app-debug.apk
 ```
-
-## Notes
-
-- The UI is built with Jetpack Compose.
-- The project does not use XML layout files with Android Views.
-- Crypto currency topics are not part of this app.
-- AI features are not required for this app.
