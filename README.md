@@ -2,6 +2,33 @@
 
 TaskFlow là ứng dụng Android hỗ trợ quản lý công việc cá nhân, project cá nhân, deadline, trạng thái tiến độ, ghi chú, comment và attachment. Ứng dụng hướng đến các cá nhân như học sinh, sinh viên, freelancer, developer hoặc người tự học cần quản lý nhiều đầu việc cùng lúc.
 
+## Công Nghệ Sử Dụng
+
+Dự án sử dụng các công nghệ chính sau:
+
+- **Kotlin**: ngôn ngữ lập trình chính của ứng dụng Android.
+- **Jetpack Compose**: framework xây dựng giao diện UI bằng code Kotlin, không dùng XML layout View.
+- **Material 3**: bộ component UI dùng cho button, card, dialog, top app bar, text field và các thành phần giao diện khác.
+- **Room Database**: thư viện làm việc với SQLite local database trên thiết bị.
+- **SQLite**: nơi lưu trữ dữ liệu chính của app ở chế độ local.
+- **MVVM Architecture**: mô hình tổ chức app thành UI, ViewModel và data layer.
+- **Repository Pattern**: lớp trung gian xử lý logic dữ liệu giữa ViewModel và database.
+- **Hilt Dependency Injection**: tự động cung cấp Room database, DAO, repository và ViewModel dependency.
+- **Kotlin Coroutines**: xử lý các tác vụ bất đồng bộ như đọc/ghi database mà không làm đứng giao diện.
+- **StateFlow**: quản lý và cập nhật UI state từ ViewModel sang Compose UI.
+- **Navigation Compose**: điều hướng giữa các màn hình trong app.
+- **Kotlin Serialization**: hỗ trợ mapping dữ liệu khi chạy chế độ Supabase tùy chọn.
+- **Supabase Optional Mode**: backend tùy chọn cho demo remote mode, không phải nguồn lưu trữ chính của bản nộp.
+
+Tóm tắt stack chính:
+
+```text
+Kotlin + Jetpack Compose + Material 3
+MVVM + Repository Pattern + Hilt
+Room SQLite local database
+Optional Supabase remote mode
+```
+
 ## 1. Đáp Ứng Yêu Cầu Kotlin Và Jetpack Compose
 
 Ứng dụng được xây dựng bằng **Kotlin** và sử dụng **Jetpack Compose** cho toàn bộ giao diện người dùng.
